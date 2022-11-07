@@ -1,0 +1,487 @@
+<! Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="description" content="Web Programming: Individual Project">
+	    <meta name="keywords" content="HTML and CSS">
+	    <meta name="author" content="Khanal Sanjay">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Web Programming Individual Project
+		</title>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Rambla' rel='stylesheet'>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.wrapper{
+				width: auto;
+			}
+			.container{
+				height: 550px;
+				background-color: #ECABC7;
+				background-image: url("images/1.jpg");
+				background-repeat: no-repeat;
+				text-align: center;
+			}
+			
+			.first{
+				padding-top: 220px;
+				color: #FFFFFF;
+			}
+			.info{
+				width: auto;
+				margin-top: 20px;
+				margin-bottom: 60px;
+				display:inline-block;
+			}
+			h2{
+				font-family: 'Oswald', sans-serif;
+				font-size: 30px;
+				padding-left: 20px;
+				text-align:center;
+			}
+			.pic{
+				margin-left: 50px;
+				height: 420px;
+				width: 30%;
+				float:left;
+				
+			}
+			#profile{
+				float: right;
+				padding: 10px;
+				display: inline;
+				
+			}
+			.details{
+				width: 60%;
+				float: right;
+			}
+			.education{
+				margin-top: 60px;
+			}
+			.last{
+				margin-top: 20px;
+				margin-bottom: 20px;	
+				display:block;
+			}
+			p{
+				font-family: 'Rambla';
+				font-size: 20px;
+				padding-left: 20px;
+				letter-spacing: 0.9;
+			}
+			#information{
+				font-family: 'Rambla';
+				font-size: 20px;
+				line-height: 1.6;
+				padding-left: 20px;
+				letter-spacing: 0.9;
+			}
+			b{
+				text-transform: uppercase;
+				text-decoration: underline;
+			}
+			.mapouter{
+				position:relative;
+				text-align:right;
+				height:500px;
+				width:600px;
+				
+			}
+			.gmap_canvas {
+				overflow:hidden;
+				background:none!important;
+				height:500px;
+				width:600px;
+				padding-right: 100px;
+			}
+			.map{
+				float: right;
+			}
+			.googlemap{
+				float:left;
+				width:40%;
+			}
+			.forms{
+				width: 50%;
+				height: 600px;
+				float: left;
+			}
+			input[type=text], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+			input[type=textarea], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+			
+			input[type=submit] {
+			  width: 100%;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+			  background-color: #45a049;
+			}
+			.contact-form{
+				padding-left: 20px;
+				font-family: 'Rambla';
+				
+			}
+			.hobby{
+				margin-top: 20px;
+			}
+			.tbl{
+				border-collapse: collapse;
+				width: 100%;
+				border: 1px solid #ddd;
+				padding: 8px;
+				font-family: 'Rambla';
+				font-size: 20px;
+				line-height: 1.9;
+			}
+			.tbl td, .tbl th{
+				border: 1px solid #ddd;
+				padding: 8px;
+			}
+			.photos{
+				margin-top: 20px;
+				margin-bottom: 50px;
+				
+			}
+			div.gallery {
+			  margin: 5px;
+			  border: 1px solid #ccc;
+			  float: left;
+			  width: 300px;
+			}
+
+			div.gallery:hover {
+			  border: 1px solid #777;
+			}
+
+			div.gallery img {
+			  width: 100%;
+			  height: auto;
+			}
+
+			div.desc {
+			  padding: 15px;
+			  text-align: center;
+			}
+			
+			.youtube{
+				margin-top: 40px;
+				text-align:left;
+			}
+			.fa {
+			padding: 6px;
+			font-size: 20px;
+			width: 30px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+			}
+			
+			.fa:hover {
+			opacity: 0.7;
+			}
+			.fa-facebook{
+			background: #3B5998;
+			color: white;
+			}
+			.fa-instagram {
+			background: #125688;
+			color: white;
+			}
+			.fa-twitter {
+			background: #55ACEE;
+			color: white;
+			}
+			.scrollbar{
+				width: 100%;
+				height: 300px;
+				overflow-y: scroll;
+				scrollbar-color: rebeccapurple green;
+				scrollbar-width: thin;
+			}
+			.site{
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		<!-- Wrapper for the whole body section-->
+			<div class="container">
+			<!-- Container div for top section-->
+			
+				<h2 class="first">
+					<strong>WEB PROGRAMMING || INDIVIDUAL PROJECT</strong>
+				</h2>
+			</div>
+			<!--End of container section-->
+			
+			<div class="info">
+				<h2>HOME || ABOUT ME</h2>
+				<div class="pic">
+					<img id ="profile" src="images/me.jpg" height="400px">
+				</div>
+				<div class="details">
+					
+					<p>Hello! I am Khanal Sanjay. I have been living here in Japan since last six months in kyoto city. I am currently studying Master's Degree from The kyoto College 
+					of Graduate Students for Informatics. I am from Nepal. </p>
+					
+					<table id="information">
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+						<tr>
+							<td><strong>Birthday:</strong></td>
+							<td><datetime>1998-05-10</datetime></td>
+						</tr>
+						<tr>
+							<td><strong>Phone Number:</strong></td>
+							<td>080-1479-0596</td>
+						</tr>
+						<tr>
+							<td><strong>Address:</strong></td>
+							<td><address>120-1, Shimotatecho, Ichijo-dori, Kamigyo-ku, Kyoto-shi, Kyoto Prefecture</address></td>
+						</tr>
+						<tr>
+							<td><strong>Mail:</strong></td>
+							<td>khanals186@gmail.com</td>
+						</tr>
+						<tr>
+							<td><strong>Status:</strong></td>
+							<td>Student</td>
+						</tr>
+						<tr>
+							<td><strong>Links:</strong></td>
+							<td><a href="https://www.facebook.com/sanjay.khanal.54943/" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#" class="fa fa-instagram"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="fa fa-twitter"></a></</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- End of the information section -->
+			
+			<!--Section for Education work experiences and other qualifications-->
+			<div class="education">
+				<h2 style="align:center">HOME || Education and Work Experiences<h2>
+				
+				<table class="tbl">
+					<tr>
+						
+						<th colspan="2">Education / Work Experience</th>
+						<th>From Institute / Company</th>
+					<tr>
+					<tr>
+						<td rowspan="4">Education</td>
+						<td>Secondary Level</td>
+						<td>Shree Kiran Higher Secondary School, Arghakhanchi Nepal</td>
+					</tr>
+					<tr>
+						<td>Higher Secondary Level</td>
+						<td>Annapurna Model College, Butwal Nepal</td>
+					</tr>
+					<tr>
+						<td>Bachelor's Degree</td>
+						<td>Butwal Multiple Campus, Butwal Nepal</td>
+					</tr>
+					
+					<tr>
+						<td colspan="2"> Master's Degree: Ongoing(KCGI)</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Work Experiences</td>
+						<td>2 year working experience on Computer Operator</td>
+						<td>National Identity</td>
+					</tr>
+					<tr>
+						<td>1 years working experience on PHP (Laravel Framework)</td>
+						<td>Infox It, Butwal Nepal</td>
+					</tr>
+					<tr>
+						<td>Other</td>
+						<td>  Basic Japanese language Efficiency Test N5.</td>
+						<td>Butwal, Nepal</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+			<!--End of Work Experiences and Education Section-->
+			
+			<!--W3 section for progress bar CSS-->
+			<div class="w3-container">
+			  <h2>My skills</h2>
+			  <p>I rate myself as following on the skillsets that are given below:</p>
+			  <div class="w3-light-grey w3-round-xlarge" style="padding-left:25px;">
+				<div class="w3-container w3-blue w3-round-xlarge" style="width:60%">Team Work 60%</div>
+			  </div></br>
+			  <div class="w3-light-grey w3-round-xlarge" style="padding-left:25px;">
+				<div class="w3-container w3-blue w3-round-xlarge" style="width:80%">English Language 80%</div>
+			  </div></br>
+			  <div class="w3-light-grey w3-round-xlarge" style="padding-left:25px;">
+				<div class="w3-container w3-blue w3-round-xlarge" style="width:50%">Front End 50%</div>
+			  </div></br>
+			  <div class="w3-light-grey w3-round-xlarge" style="padding-left:25px;">
+				<div class="w3-container w3-blue w3-round-xlarge" style="width:25%">Japanese Language 25%</div>
+			  </div>
+			</div>
+			<!--End of W3 section for Skills-->
+			
+			<!--use of iframe tag to embed youtube video.-->
+			<div class="hobby">
+				<h2>Hobbies | Travelling</h2>
+				<p><q>I haven't been everywhere but I know it is in my list.</q> Listen to motivational speech on travel.</p>
+				<audio controls width="100%">
+				  <source src="audio/travel.mp3" type="audio/mpeg">
+				</audio>
+				<div class="scrollbar">
+				<p><b>Travelling</b> beautiful places is my main hobby. You might feel like you’re stuck in a rut in your daily life. 
+				Or you’re yearning for something exciting and different. You’re craving new experiences and new challenges. 
+				Travel is the ideal place to test yourself. It pushes people to their limits and gets them outside their comfort zone. You’ll discover how resourceful you are when you’re exposed to new places, people and experiences. 
+				Maybe it’s finding your way around a busy city. Or ordering a meal when you don’t speak the language. Or zip-lining. You’ll feel pride when you finish your trip successfully. 
+				Overcoming challenges will bring you joy and energy for future tests. You’ll realize how capable you are and build your confidence.</br>Learning is a strong reason why people love to travel.  They want to experience something unfamiliar and leave with new skills or knowledge. Seeing the world is more educational than a high school or college class. This condensed crash course in discovering how the rest of the world lives actually will cover subjects like history, geography and sociology. 
+				Every destination has something unique to teach visitors, and immersing themselves in a completely different world is the best learning experience.
+				People may travel to learn something specific: a new language, a new cuisine, aspects of a different culture, or a deeper appreciation of faith or spirituality. 
+				As a bonus, they’ll take away more than their specific goal. They’ll discover totally different ways of doing things. They’ll also gain awareness of new customs, cultures, people and places. 
+				And because you’re actually experiencing this learning in real life, not reading it in a textbook, it will stay with you for a long time. 
+				You’ll gain a deep sense of satisfaction with the new skills you’ve learned – and new insights you’ve gained.</P> 
+				</div>
+				
+				
+				<div class="photos">
+				<h2>Travel Gallery</h2>
+				<div class="gallery">
+					  <a target="#" href="#">
+						<img src="images/inari2.jpg" alt="Inari" width="600" height="400">
+					  </a>
+					  <div class="desc">Fushimi Inari</div>
+					</div>
+
+					<div class="gallery">
+					  <a target="#" href="bambooforest.jpg">
+						<img src="images/bambooforest.jpg" alt="Forest" width="600" height="400">
+					  </a>
+					  <div class="desc">Bamboo Forest</div>
+					</div>
+
+					
+
+					<div class="gallery">
+					  <a target="_blank" href="sculpture">
+						<img src="images/sculpture.jpg" alt="Sculpture" width="600" height="400">
+					  </a>
+					  <div class="desc">Kiyomizudera Scculpture</div>
+					</div>
+					<div class="gallery">
+					  <a target="_blank" href="kiyomizudera.jpg">
+						<img src="images/kiyomizudera.jpg" alt="temple" width="600" height="400">
+					  </a>
+					  <div class="desc">Kiyomizudera</div>
+					</div>
+				</div>
+				<div class="youtube">
+					<iframe width="100%" height="600" src="https://www.youtube.com/embed/AYl4-0UnohQ" title="【4K】Drone Footage | KYOTO - Awesome Japan ..:: Cinematic Aerial Film | 京都 日本 2019" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- End of iframe tag for showing embeded youtube video-->
+					<!--Section for table other hobbies-->
+				</div>
+				<h2>Other Hobbies</h2>
+				</br>
+				<table class="tbl">
+					<tr>
+						<th><i class="fa fa-video-camera" style="align:center"></i></br>Anime | Manga</th>
+						<th><i class="fa fa-soccer-ball-o" style="align:center"></i><br> Footaball</th>
+						<th><i class="fa fa-music" style="align:center"></i></br>Listening Music</th>
+					</tr>
+					<tr>
+						<td>I love watching Japanese anime and read Manga during leisure times. My favourite animes are Dragon Ball, Bleach and Attack on Titans</td>
+						<td>I love playing football with my friends. I love to play as Striker but if my team needs I also play as GoalKeeper.</td>
+						<td>I love listening to music while doing household works. Mostly I listen to classic, vintage songs. But Pop songs are my favourite.</td>
+					</tr>
+				</table>
+				<!--End of section for other hobbies-->
+				
+			</div>	
+			
+			<!--section for contact me form-->
+			<div class="last">
+				
+				<div class="forms">
+					<h2>CONTACT ME</h2>
+					<p>You can also contact me for any queries. I will reach out to you as soon as possible.</p>
+					<form class="contact-form" action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<input type="textarea" id="lname" name="lastname" placeholder="Enter your comments...">
+
+					<label for="country">Country</label>
+					<select id="country" name="country">
+					  <option value="australia">Nepal</option>
+					  <option value="canada">Japan</option>
+					  <option value="China">China</option>
+					  <option value="Sri Lanka">Sri Lanka</option>
+					  <option value="Bangladesh">Bangladesh</option>
+					  <option value="Veitnam">Veitnam</option>
+					  <option value="India">India</option>
+					</select>
+					
+					<input type="submit" value="SUBMIT">
+				  </form>
+				</div>
+				<!--End of section for contact me form-->
+				
+				<!--Section for embeding google maps-->
+				<div class="map">
+					<div class="googlemap">
+					<h2>MY LOCATION</h2>
+						<div class="mapouter">
+							<div class="gmap_canvas">
+								<iframe
+        src="https://maps.google.com/maps?q=6028377&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="400px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="float: right"
+      ></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End of iframe tag for embeding google map online -->
+				
+			</div>
+		</div>
+		<!--End of body wrapper-->
+	</body>
+</html>
